@@ -1,6 +1,6 @@
 // Configuração do Firebase
 const firebaseConfig = {
-    //credencial aqui
+    //ADICIONE AQUI SUAS CREDENCIAIS
 
 };
 
