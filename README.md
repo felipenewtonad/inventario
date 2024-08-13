@@ -27,7 +27,7 @@ cd seu-repositorio
     Crie um projeto no Firebase:
         Acesse o Firebase Console.
         Crie um novo projeto e configure o Firestore.
-        Copie as credenciais do Firebase (configurações do app web) e substitua no arquivo firebaseConfig.js.
+        Copie as credenciais do Firebase (configurações do app web) e substitua no arquivo js/iniciarFB.js.
 
     Configurar Firestore:
         Crie as coleções necessárias, como products e purchases.
