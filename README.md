@@ -19,7 +19,7 @@ Funcionalidades
 
 bash
 
-git clone https://github.com/felipnewtonad/inventario.git
+git clone https://github.com/felipenewtonad/inventario.git
 cd seu-repositorio
 
 3. Configurar o Firebase
