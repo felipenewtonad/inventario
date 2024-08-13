@@ -29,6 +29,7 @@ function login() {
             // Tratamento de erros
             var errorCode = error.code;
             var errorMessage = error.message;
+            //Adiciona o atributo open ao dialog/modal #alerta
             document.querySelector("#alerta").setAttribute('open', '');
             alert(`Erro: ${errorCode}, ${errorMessage}`);
         });
