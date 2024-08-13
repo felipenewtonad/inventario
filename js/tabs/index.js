@@ -21,7 +21,7 @@ $(document).ready(function () {
     $('md-primary-tab').on('click', function () {
         var abaId = $(this).attr('id');
 
-        // Atualizar o localStorage com a aba ativa
+        // Atualizar o localStorage com a aba ativa.
         localStorage.setItem('abaAtiva', abaId);
 
         // Recarregar a página
