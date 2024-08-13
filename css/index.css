@@ -1,0 +1,101 @@
+#painel-panel,
+#cadastro-panel,
+#vender-panel,
+#addestoque-panel,
+#vendas-panel,
+#preco-panel,
+#relatorios-panel {
+    display: none;
+}
+.active {
+    display: block !important;
+}
+/* Estilo geral para a input */
+#product-input_addEstoque {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+/* Efeito ao focar na input */
+#product-input_addEstoque:focus {
+    border-color: #3f51b5; /* Cor de destaque ao focar, combinando com a paleta Material Design */
+    background-color: #fff; /* Cor de fundo branco ao focar */
+}
+
+/* Placeholder estilizado */
+#product-input_addEstoque::placeholder {
+    color: #999;
+    opacity: 1; /* Para que o placeholder fique opaco em todos os navegadores */
+}
+
+/* Estilo do datalist options (não estilizado diretamente em todos os navegadores) */
+#product-list_addEstoque option {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo quando o campo está desativado */
+#product-input_addEstoque:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+.suspended-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.suspended-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.suspended-box p {
+    margin: 5px 0;
+}
+
+.suspended-box .mdl-grid {
+    margin-top: 10px;
+}
+.suspended-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.suspended-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.suspended-box p {
+    margin: 5px 0;
+}
+
+.suspended-box .mdl-grid {
+    margin-top: 10px;
+}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFAB SISTEMAS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <style>
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .login-container md-outlined-text-field {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .login-container md-filled-button {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login login-container" style="margin-left: 36%;">
+        <h1>Olá, Vamos começar.</h1>
+        <md-outlined-text-field label="E-mail" id="email">
+            <md-icon slot="leading-icon">person</md-icon>
+        </md-outlined-text-field>
+        <md-outlined-text-field label="Senha" type="password" id="password">
+            <md-icon-button id="togglePassword" toggle slot="trailing-icon">
+                <md-icon>visibility_off</md-icon>
+                <md-icon slot="selected">visibility</md-icon>
+            </md-icon-button>
+        </md-outlined-text-field>
+        <md-filled-button onclick="login()">LOGAR</md-filled-button>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/iniciarFb.js"></script>
+    <script src="js/autenticando/login/index.js"></script>
+</body>
+</html>
